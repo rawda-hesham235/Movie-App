@@ -50,6 +50,7 @@ class MovieCard extends StatelessWidget {
                     ),
             ),
             Container(
+              padding: SizeConfig.only(context, right: 7),
               margin: SizeConfig.all(context, 10),
               height: SizeConfig.h(context, 28),
               width: SizeConfig.w(context, 58),
@@ -60,7 +61,7 @@ class MovieCard extends StatelessWidget {
               child: Row(
                 children: [
                   Padding(
-                    padding: SizeConfig.only(context, left: 4),
+                    padding: SizeConfig.only(context, left: 3),
                     child: Text(
                       movie.rating?.toString() ?? '0.0',
                       style: TextStyle(
